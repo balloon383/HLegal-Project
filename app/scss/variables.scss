@@ -1,0 +1,119 @@
+/* ---COLORS--- */
+/* main */
+$main-color: #323264;
+$main-color-alt: #46466E;
+$main-color-soft: #686887;
+/* accent */
+$accent-color: #F0145A;
+/* active */
+$active-reg: #24A3FF;
+$active-hover: #0085FF;
+$active-active: #006CCF;
+/* grey */
+$gray-bg: #F5F5FA;
+$gray-bg-alt: #EDEDF7;
+$gray-text: #B3B3BA;
+$gray-separator: #E6E6F0;
+/* gradient */
+$gradient: linear-gradient(-128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+/* links */
+$link-regular: #24A3FF;
+$link-hover: #F0145A;
+/* ---BREAKPOINTS--- */
+$breakpoint-sm: 375px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+/* mixins */
+/* gradient text */
+@mixin gradient-text {
+    background-image: linear-gradient(90.13deg, #F0145A 0.84%, #ef8080 99.96%);
+    background-color: #F0145A;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin hero-font {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+@mixin hero-mobile {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+@mixin h2-font {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+@mixin h2-mobile-font {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin h3-font {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+@mixin h3-mobile-font {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin h3-caps-font {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+@mixin h4-font {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin introduction {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+@mixin paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin paragraph-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin ul-font {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin ol-font {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin link {
+    line-height: 20px;
+}
