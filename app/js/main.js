@@ -31,6 +31,7 @@ tab.addEventListener('click', (e) =>{
         })
     })
 })();
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
 direction: 'horizontal',
@@ -49,4 +50,24 @@ pagination: {
             spaceBetween: 20
         },
     } */
+});
+
+const swiperAbout = new Swiper('.swiper--about', {
+  // Optional parameters
+direction: 'horizontal',
+    loop: true,
+    spaceBetween: 20,
+  // If we need pagination
+pagination: {
+    el: '.swiper-pagination-about',
+    clickable: false,
+    },
+    slidesPerView: 1, 
+breakpoints: {
+    // when window width is >= 320px
+    768: {
+        slidesPerView: 4,
+        spaceBetween: 40
+    },
+} 
 });

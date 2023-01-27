@@ -248,7 +248,18 @@
 
 .swiper--about {
     width: 255px;
-
+    @media screen and (min-width:$breakpoint-md) {
+        width: 648px;
+    }
+    @media screen and (min-width:$breakpoint-lg) {
+        width: 904px;
+    }
+    @media screen and (min-width:$breakpoint-xl) {
+        width: 1320px;
+    }
+    @media screen and (min-width:$breakpoint-xxl) {
+        width: 1600px;
+    }
 }
 
 .content__container .swiper-pagination {
