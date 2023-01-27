@@ -1,0 +1,278 @@
+.logo--about {
+    &::before {
+        content: '/';
+        font-weight: normal;
+        font-size: 30px;
+        color: $accent-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(88px, 0);
+
+        @media screen and (min-width:$breakpoint-md) {
+            font-size: 50px;
+            font-weight: 700;
+            transform: translate(150px, 15px);
+        }
+
+        @media screen and (min-width:$breakpoint-lg) {
+            font-size: 50px;
+            font-weight: 700;
+            transform: translate(150px, -25px);
+        }
+    }
+
+    &::after {
+        content: 'about us';
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: $main-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(100px, 0);
+
+        @media screen and (min-width:$breakpoint-md) {
+            font-size: 36px;
+            line-height: 44px;
+            transform: translate(180px, 0);
+        }
+
+        @media screen and (min-width:$breakpoint-lg) {
+            font-size: 36px;
+            line-height: 44px;
+            transform: translate(170px, -35px);
+        }
+    }
+}
+
+
+
+
+.achiev {
+
+    // .achiev__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:$breakpoint-lg) {
+            flex-direction: row;
+        }
+    }
+
+    // .achiev__inner
+
+    &__inner {
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-lg) {
+            margin-bottom: 60px;
+            flex: 1 1 60%;
+            margin-right: 30px;
+        }
+    }
+
+    // .achiev__header
+
+    &__header {
+        @include hero-mobile;
+        @include gradient-text;
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-md) {
+            @include hero-font;
+        }
+    }
+
+    // .achiev__text
+
+    &__text {
+        @include introduction;
+    }
+
+    // .achiev__text-first
+
+    &__text-first {
+        margin-bottom: 15px;
+    }
+
+    // .achiev__text--second
+
+
+    // .achiev__inner--seecond
+
+    &__inner--seecond {
+        padding-left: 30px;
+        border-left: 4px solid $gray-separator;
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-md) {
+            margin-bottom: 60px;
+            flex: 1 1 40%;
+        }
+    }
+
+    // .achiev__number
+    &__li {
+        position: relative;
+    }
+
+    &__number {
+        @include gradient-text;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 10px;
+        padding-left: 45px;
+    }
+
+    // .achiev__comment
+
+    &__comment {
+        color: $main-color;
+        line-height: 20px;
+    }
+
+
+    // .achiev__header--second
+
+}
+
+.experience {
+
+    // .experience__svg
+    &__svg {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0, 5px);
+    }
+}
+
+.img {
+
+    // .img__container
+
+    &__container {
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-md) {
+            margin-bottom: 60px;
+        }
+    }
+
+    // .img__img
+
+    &__img {
+        width: 100%;
+    }
+
+    // .img__text
+
+}
+
+.quality {
+
+    // .quality__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+
+        @media screen and (min-width:$breakpoint-lg) {
+            flex-direction: row;
+        }
+    }
+
+    &__inner {
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-lg) {
+            flex: 1 1 60%;
+            margin-right: 60px;
+        }
+    }
+
+    &__inner--second {
+        @media screen and (min-width:$breakpoint-lg) {
+            flex: 1 1 40%;
+        }
+    }
+
+
+    // .quality__text
+
+    &__text {
+        @include introduction;
+    }
+
+    // .quality__text--first
+
+    &__text--first {
+        margin-bottom: 15px;
+    }
+
+    // .quality__text--second
+
+    &__text--second {
+        margin-bottom: 15px;
+    }
+
+    // .quality__text--third
+}
+
+.slider {
+
+    // .slider__achiev
+
+    &__achiev {
+        background-color: $gray-bg;
+        padding-bottom: 76px;
+    }
+
+    // .slider__header
+
+    &__header {
+        color: $main-color;
+        @include h3-caps-font;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+.swiper--about {
+    width: 255px;
+
+}
+
+.content__container .swiper-pagination {
+    bottom: -40px;
+}
+
+.content__container .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+
+.slide__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 100px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.header__list .header__links--active {
+    color: $active-reg;
+}
+
+.header__list .active--page {
+    color: $accent-color;
+}
