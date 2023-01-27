@@ -1,0 +1,217 @@
+.content__container--contact {
+    @media screen and (min-width:$breakpoint-xl) {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width:$breakpoint-xxl) {
+        max-width: 1368px;
+        margin: 0 auto;
+    }
+}
+
+.logo--contact {
+    &::before {
+        content: '/';
+        font-weight: normal;
+        font-size: 30px;
+        color: $accent-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(88px, 0);
+
+        @media screen and (min-width:$breakpoint-md) {
+            font-size: 50px;
+            font-weight: 700;
+            transform: translate(150px, 15px);
+        }
+
+        @media screen and (min-width:$breakpoint-lg) {
+            font-size: 50px;
+            font-weight: 700;
+            transform: translate(150px, -25px);
+        }
+    }
+
+    &::after {
+        content: 'contact';
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: $main-color;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(100px, 0);
+
+        @media screen and (min-width:$breakpoint-md) {
+            font-size: 36px;
+            line-height: 44px;
+            transform: translate(180px, 0);
+        }
+
+        @media screen and (min-width:$breakpoint-lg) {
+            font-size: 36px;
+            line-height: 44px;
+            transform: translate(170px, -35px);
+        }
+    }
+}
+
+.header__icon {
+    &::before {
+        @media screen and (min-width:$breakpoint-md) {
+            border: 1px solid $gray-separator;
+            background-color: $gray-separator;
+        }
+    }
+}
+
+.contact {
+
+    // .contact__flex
+
+    &__flex {
+        display: flex;
+        gap: 60px;
+    }
+
+    // .contact__block--first
+
+    &__block--first {
+        flex: 1 1 50%;
+    }
+
+    // .contact__adress
+
+    &__adress {
+        font-size: 21px;
+        line-height: 30px;
+        color: $main-color;
+        display: block;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $gray-separator;
+        margin-bottom: 30px;
+    }
+
+    &__details {
+        display: block;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $gray-separator;
+        margin-bottom: 30px;
+
+
+    }
+
+    // .contact__facebook
+    &__number {
+        font-size: 21px;
+        line-height: 30px;
+        color: $main-color;
+        margin-bottom: 15px;
+
+    }
+
+    &__email {
+        font-size: 21px;
+        line-height: 30px;
+        color: $active-reg;
+    }
+
+    &__facebook {
+        display: flex;
+        align-items: center;
+    }
+
+    // .contact__svg
+    &__svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    // .contact__facebook--text
+    &__facebook--text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: $active-reg;
+        margin-left: 10px;
+    }
+
+    // .contact__block--second
+
+    &__block--second {
+        flex: 1 1 50%;
+        padding: 30px;
+        background-color: $gray-bg;
+        margin-bottom: 60px;
+        border-radius: 12px;
+    }
+
+    // .contact__header
+
+    &__header {
+        @include hero-mobile;
+        @include gradient-text;
+        margin-bottom: 30px;
+
+        @media screen and (min-width:$breakpoint-md) {
+            @include hero-font;
+        }
+    }
+
+    // .contact__name
+    &__input {
+        width: 100%;
+        border: none;
+        padding: 15px 0px 15px 15px;
+        border-radius: 8px;
+    }
+
+    &__input:focus {
+        border-color: #24A3FF;
+    }
+
+    &__input::placeholder {
+        color: $gray-text;
+        @include paragraph
+    }
+
+    &__name {
+        margin-bottom: 30px;
+    }
+
+    // .contact__message
+
+    &__message {
+        padding-bottom: 100px;
+        margin-bottom: 30px;
+    }
+
+    // .contact__text
+
+    &__text {
+        @include h3-caps-font;
+        color: $gray-text;
+        margin-bottom: 15px;
+    }
+
+    // .contact__number
+
+    &__number {
+        margin-bottom: 15px;
+    }
+
+    // .contact__email
+
+    &__email {
+        margin-bottom: 30px;
+    }
+
+    // .contact__button
+
+    &__button {
+        width: 100%;
+    }
+}
