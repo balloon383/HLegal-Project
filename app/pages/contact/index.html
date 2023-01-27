@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+    <header class="header header--services">
+        <!-- first header block -->
+        <div class="flex__wrapper">
+            <section class="header__container header__container--pubs">
+                <section class="content__container header__flex">
+                    <section class="haeader__radio">
+                        <input type="radio" name="lang" id="choose_lang1" class="header__input">
+                        <label class="header__label header__label--pubs" for="choose_lang1">УК</label>
+                        <input type="radio" name="lang" id="choose_lang2" class="header__input">
+                        <label class="header__label header__label--pubs" for="choose_lang2">РУ</label>
+                        <input type="radio" name="lang" id="choose_lang3" class="header__input" checked>
+                        <label class="header__label header__label--pubs" for="choose_lang3">EN</label>
+                    </section>
+                    <section class="header__subcontainer">
+                        <address class="header__adress header__adress--pubs">Kyiv, Mechnikova str., 14/1</address>
+                        <a class="header__number header__number--pub" href="tel:0800211927">0800 211 927</a>
+                        <a href="../../index.html" class="header__icon">
+                            <svg class="header__icon-svg">
+                                <use xlink:href="../../images/icons/sprite.svg#vector-gray"></use>
+                            </svg>
+                        </a>
+                    </section>
+                </section>
+            </section>
+            <!-- second header block -->
+            <section class="header__container-second header__container--sevices">
+                <section class="content__container logo__flex ">
+                    <a href="../../index.html" class="logo logo--contact">
+                        <svg class="logo__svg ">
+                            <use xlink:href="../../images/icons/sprite.svg#Logo-blue"></use>
+                        </svg>
+                    </a>
+                    <nav class="header__nav">
+                        <div class="header__nav-close"></div>
+                        <ul class="header__list">
+                            <li class="header__list-li"><a class="header__links header__links--active"
+                                    href="../about-us/index.html">about us</a></li>
+                            <li class="header__list-li"><a class="header__links header__links--active"
+                                    href="../services/index.html">services</a></li>
+                            <li class="header__list-li"><a class="header__links header__links--active"
+                                    href="../team/index.html">team</a></li>
+                            <li class="header__list-li"><a class="header__links header__links--active"
+                                    href="../publications/index.html">publications</a></li>
+                            <li class="header__list-li"><a class="header__links header__links--active active--page"
+                                    href="../contact/index.html">contact</a></li>
+                        </ul>
+                    </nav>
+                    <svg class="logo__burger">
+                        <use xlink:href="../../images/icons/sprite.svg#Hamburger-blue"></use>
+                    </svg>
+                </section>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="content__container contact__flex content__container--contact">
+            <div class="contact__block--first">
+                <div class="contact__adress">
+                    Kyiv, <br>
+                    Mechnikova str, 14
+                </div>
+                <div class="contact__details">
+                    <a class="contact__number" href="tel:0800211927">0800 211 927</a>
+                    <br>
+                    <a class="contact__email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                </div>
+                <div>
+                    <a class="contact__facebook" href="">
+                        <svg class="contact__svg">
+                            <use xlink:href="../../images/icons/sprite.svg#vector__footer"></use>
+                        </svg>
+                        <p class="contact__facebook--text">Our page <br> on facebook</p>
+                    </a>
+
+                </div>
+            </div>
+            <div class="contact__block--second">
+                <form class="contact__form" action="">
+                    <h2 class="contact__header">We would like to help you</h2>
+                    <input class="contact__name contact__input" placeholder="Name" type="text" name="" id="">
+                    <input class="contact__message contact__input" placeholder="Message" type="text" name="" id="">
+                    <p class="contact__text">How to answer you?</p>
+                    <input class="contact__number contact__input" placeholder="Phone number" type="text" name="" id="">
+                    <input class="contact__email contact__input" placeholder="Email" type="email" name="" id="">
+                    <button class="it__button contact__button">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="content__container">
+            <div class="footer__adresses">
+                <p class="footer_adress">Kyiv, Mechnikova str., 14/1</p>
+                <a class="footer__link link" href="#">On map</a>
+            </div>
+            <div class="footer__contancts">
+                <a class="footer__fb" chref="#">
+                    <svg class="footer__icon">
+                        <use xlink:href="../../images/icons/sprite.svg#vector__footer"></use>
+                    </svg>
+                </a>
+                <a class="footer__number" href="tel:0800211927">0800 211 927</a>
+                <a class="footer__mail link" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </div>
+            <p class="footer__etc">© 2021 HLEGAL Law company, LLC</p>
+        </section>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
