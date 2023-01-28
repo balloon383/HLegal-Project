@@ -211,5 +211,79 @@
         }
     }
 
-    
+                &__position {
+                    color: $gray-text;
+                    @include paragraph-small;
+                    margin-bottom: 10px;
+                }
+        
+                &__email {
+                    color: $active-reg;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+        
+                &__linkedin {
+                    color: $active-reg;
+                    line-height: 20px;
+                }
+        
+                // .team__about
+        
+                &__about {
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+        
+                    @media screen and (min-width:$breakpoint-md) {
+                        border-top: 4px solid $gray-separator;
+                    }
+        
+                    @media screen and (min-width:$breakpoint-lg) {
+                        border: none;
+                    }
+                }
+        
+                // .team__text
+        
+                &__text {
+                    line-height: 26px;
+                    margin-bottom: 15px;
+                }
+        
+                // .team__text--second
+        
+                &__text--second {
+                    line-height: 26px;
+                    margin-bottom: 30px;
+                }
+        
+                // .team__education
+        
+                &__education {
+                    @include h3-caps-font;
+                    color: $main-color;
+                    margin-bottom: 15px;
+                }
+        
+                // .team__education--text
+        
+                &__education--text {
+                    line-height: 26px;
+                    margin-bottom: 30px;
+                }
+        
+                // .team__experience
+        
+                &__experience {
+                    @include h3-caps-font;
+                    color: $main-color;
+                    margin-bottom: 15px;
+                }
+        
+                // .team__experience--text
+        
+                &__experience--text {
+                    line-height: 26px;
+                }
         }
