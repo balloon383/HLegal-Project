@@ -8,7 +8,6 @@ const headerNavCloseBtn = document.querySelector('.header__nav-close')
 
 headerBurgerBtn.addEventListener('click',  (e) =>{
     headerNav.classList.add('active');
-
 })
 headerNavCloseBtn.addEventListener('click', (e) => {
     headerNav.classList.remove('active');
@@ -17,57 +16,44 @@ headerNavCloseBtn.addEventListener('click', (e) => {
 tabsItem.forEach((tab, index) => {
 tab.addEventListener('click', (e) =>{
 
-
-            tabsContent.forEach(content => {
+    tabsContent.forEach(content => {
             content.classList.remove('active')
         });
 
-            tabsItem.forEach(tab =>{
+    tabsItem.forEach(tab =>{
             tab.classList.remove('active')
         });
 
-            tabsItem[index].classList.add('active')
+    tabsItem[index].classList.add('active')
             tabsContent[index].classList.add('active')
         })
     })
 })();
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
 direction: 'horizontal',
     loop: true,
     spaceBetween: 30,
-  // If we need pagination
 pagination: {
     el: '.swiper-pagination',
     clickable: true,
     },
     slidesPerView: 1, 
-    /* breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 4,
-            spaceBetween: 20
-        },
-    } */
 });
 
 const swiperAbout = new Swiper('.swiper--about', {
-  // Optional parameters
 direction: 'horizontal',
-    loop: true,
+    loop: false,
     spaceBetween: 20,
-  // If we need pagination
 pagination: {
     el: '.swiper-pagination-about',
     clickable: false,
     },
     slidesPerView: 1, 
 breakpoints: {
-    // when window width is >= 320px
     768: {
-        slidesPerView: 4,
-        spaceBetween: 40
+        slidesPerView: 1,
+        spaceBetween: 30
     },
 } 
 });
